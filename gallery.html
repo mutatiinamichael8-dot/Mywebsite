@@ -1,0 +1,157 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Gallery - My Personal Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f5fa;
+            color: #263445;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #12345a;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        nav {
+            background-color: #1d4e89;
+            text-align: center;
+            padding: 15px 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 6px 12px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 25px 16px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .photo {
+            background-color: white;
+            padding: 12px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #00000012;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            border-radius: 7px;
+        }
+
+        .photo p {
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+        footer {
+            background-color: #12345a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Photo Gallery</h1>
+    <p>Memories, experiences and special moments</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="gallery.html">My Gallery</a>
+    <a href="projects.html">My Projects</a>
+    <a href="contact.html">Contact Me</a>
+</nav>
+
+<main>
+
+    <section class="intro">
+        <h2>My Favourite Photographs</h2>
+        <p>
+            Welcome to my gallery.
+            Here I share photographs and memories
+            that I choose to display.
+        </p>
+    </section>
+
+    <section class="gallery">
+
+        <div class="photo">
+            <img src="images/photo1.jpg"
+                 alt="My first photograph">
+            <p>My Photograph 1</p>
+        </div>
+
+        <div class="photo">
+            <img src="images/photo2.jpg"
+                 alt="My second photograph">
+            <p>My Photograph 2</p>
+        </div>
+
+        <div class="photo">
+            <img src="images/photo3.jpg"
+                 alt="My third photograph">
+            <p>My Photograph 3</p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>My Personal Website - 2026</p>
+</footer>
+
+</body>
+</html>
